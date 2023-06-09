@@ -5,3 +5,11 @@
 ./lesson_2/.devcontainer
 ./lesson_2/.gitignore
 ./lesson_2/.DS_Store
+
+./lesson_3/target
+./lesson_3/.idea
+./lesson_3/.vscode
+./lesson_3/.github
+./lesson_3/.devcontainer
+./lesson_3/.gitignore
+./lesson_3/.DS_Store
