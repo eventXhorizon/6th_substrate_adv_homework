@@ -64,14 +64,12 @@ pub fn from_v1_to_v2<T:Config>() {
     let item = Kitties::<T>::storage_prefix();
 
     for (index, kitty) in storage_key_iter::<KittyId, V1Kitty, Blake2_128Concat>(module, item).drain() {
-        let v2_kitty = Kitty { name: rename(&kitty.name, b"0987"), dna: kitty.dna };
+        let mut result = [0; 8];
+        result[..4].copy_from_slice(&kitty.name[..4]);
+        let v2_kitty = Kitty {
+            name: result,
+            dna: kitty.dna
+        };
         Kitties::<T>::insert(index, &v2_kitty);
     }
-}
-
-fn rename(v1_name: &[u8; 4], append: &[u8; 4]) -> [u8; 8] {
-    let mut result = [0; 8];
-    result[..4].copy_from_slice(v1_name);
-    result[4..].copy_from_slice(append);
-    result
 }
