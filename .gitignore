@@ -13,3 +13,12 @@
 ./lesson_3/.devcontainer
 ./lesson_3/.gitignore
 ./lesson_3/.DS_Store
+
+./lesson_4/*/target
+./lesson_4/*/.idea
+./lesson_4/*/.vscode
+./lesson_4/*/.github
+./lesson_4/*/.devcontainer
+./lesson_4/*/.gitignore
+./lesson_4/*/.DS_Store
+./lesson_4/frontend_read_storage/node_modules
