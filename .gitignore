@@ -22,5 +22,16 @@
 ./lesson_4/*/.gitignore
 ./lesson_4/*/.DS_Store
 ./lesson_4/frontend_read_storage/node_modules
+#lesson_4/get_weather/target/
+
+
+/lesson_5/target
+/lesson_5/.idea
+/lesson_5/.vscode
+/lesson_5/.github
+/lesson_5/.devcontainer
+/lesson_5/.gitignore
+/lesson_5/.DS_Store
 
 lesson_5/erc20
+lesson_5/new_contract
