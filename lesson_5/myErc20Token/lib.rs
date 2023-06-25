@@ -72,6 +72,16 @@ mod my_erc20token {
             }
         }
 
+        #[ink(message)]
+        pub fn get_name(&self) -> Vec<u8> {
+            self.name.clone()
+        }
+
+        #[ink(message)]
+        pub fn get_symbol(&self) -> Vec<u8> {
+            self.symbol.clone()
+        }
+
         // #[ink(message)]
         // pub fn total_supply(&self) -> Balance {
         //     self.total_supply
