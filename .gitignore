@@ -33,5 +33,9 @@
 /lesson_5/.gitignore
 /lesson_5/.DS_Store
 
+lesson_5/erc721
 lesson_5/erc20
-lesson_5/new_contract
+lesson_5/markets
+lesson_5/substrate-contracts-node
+lesson_5/myErc20Token/target
+lesson_5/trait_erc20/target
